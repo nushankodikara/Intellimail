@@ -19,6 +19,6 @@ jobs:
                   server: ${{ secrets.FTP_SERVER }}
                   username: ${{ secrets.DEV_FTP_USERNAME }}
                   password: ${{ secrets.FTP_PASSWORD }}
-                  server-dir: /development
+                  server-dir: /
                   dangerous-clean-slate: false
                   security: loose
