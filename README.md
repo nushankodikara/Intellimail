@@ -10,7 +10,7 @@
 -   [x] Create a basic navbar
 -   [x] Create a basic footer
 
--   [ ] Create home page
+-   [x] Create home page
 -   [ ] Create about us page
 -   [ ] Create contact page
 -   [ ] Create downloads page

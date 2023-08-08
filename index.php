@@ -9,6 +9,7 @@
 <body>
     <?php include 'components/header.php'; ?>
 
+    <!-- Hero Section -->
     <section
         class="bg-white dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')] mt-16">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
@@ -56,6 +57,247 @@
         </div>
     </section>
 
+    <!-- Timeline -->
+
+    <section class="bg-white dark:bg-gray-900 py-32 px-16 text-gray-900 dark:text-white">
+        <h1 class="text-4xl text-center pb-10 font-bold capitalize">our Project is growing with you!</h1>
+
+        <ol class="relative border-l border-gray-200 dark:border-gray-700">
+            <li class="mb-10 ml-4">
+                <div
+                    class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                </div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August
+                    2023</time>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Beta Release 0.2</h3>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Alot of bug fixes and performance
+                    increases. Feedback sections were active and we collect your feedback through github.</p>
+                <a href="download.php"
+                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Download<svg
+                        class="w-3 h-3 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg></a>
+            </li>
+            <li class="mb-10 ml-4">
+                <div
+                    class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                </div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">July 2023</time>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Beta Release 0.1</h3>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">Intergrated AI features and automated
+                    mail management actions. Our development team is now available through Discord.</p>
+            </li>
+            <li class="ml-4">
+                <div
+                    class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                </div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">June 2023</time>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Project Fund Raise</h3>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">We have successfully completed our
+                    initial fund raise campaign to support the email management project. Community is everything to us.
+                </p>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Features -->
+    <section class="bg-gray-900 text-white">
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+            <div class="mx-auto max-w-lg text-center">
+                <h2 class="text-3xl font-bold sm:text-4xl">Feature Rich Email Manager</h2>
+
+                <p class="mt-4 text-gray-300">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
+                    aliquam doloribus nesciunt eos fugiat. Vitae aperiam fugit consequuntur
+                    saepe laborum.
+                </p>
+            </div>
+
+            <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <a class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+                    href="features.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                    </svg>
+
+                    <h2 class="mt-4 text-xl font-bold text-white">Smart Reply</h2>
+
+                    <p class="mt-1 text-sm text-gray-300">
+                        Suggests quick responses based on the email content.
+                    </p>
+                </a>
+
+                <a class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+                    href="features.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                    </svg>
+
+                    <h2 class="mt-4 text-xl font-bold text-white">Email Classification</h2>
+
+                    <p class="mt-1 text-sm text-gray-300">
+                        Automatically categorizes emails into different folders.
+
+                    </p>
+                </a>
+
+                <a class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+                    href="features.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                    </svg>
+
+                    <h2 class="mt-4 text-xl font-bold text-white">Email Prioritization</h2>
+
+                    <p class="mt-1 text-sm text-gray-300">
+                        Prioritizes emails based on their importance.
+                    </p>
+                </a>
+
+                <a class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+                    href="features.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                    </svg>
+
+                    <h2 class="mt-4 text-xl font-bold text-white">Email Summarization</h2>
+
+                    <p class="mt-1 text-sm text-gray-300">
+                        Summarizes long emails into shorter ones.
+                    </p>
+                </a>
+
+                <a class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+                    href="features.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                    </svg>
+
+                    <h2 class="mt-4 text-xl font-bold text-white">Email Scheduling</h2>
+
+                    <p class="mt-1 text-sm text-gray-300">
+                        Allows users to schedule emails to be sent at a later time.
+
+                    </p>
+                </a>
+
+                <a class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
+                    href="features.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                    </svg>
+
+                    <h2 class="mt-4 text-xl font-bold text-white">Email Insights</h2>
+
+                    <p class="mt-1 text-sm text-gray-300">
+                        Provides insights into email usage patterns and habits.
+
+                    </p>
+                </a>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="features.php"
+                    class="inline-block rounded bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring focus:ring-yellow-400">
+                    View All Features
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans -->
+    <section>
+        <div class="max-w-screen-xl px-4 py-8 mx-auto sm:py-12 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch">
+                <div class="grid p-6 bg-gray-100 rounded place-content-center sm:p-8">
+                    <div class="max-w-md mx-auto text-center lg:text-left">
+                        <header>
+                            <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">Pricing Plans</h2>
+
+                            <p class="mt-4 text-gray-500">
+                                We hate payment subscriptions as you do, but we need to keep the project alive. Servers
+                                and AI costs some money to run. Staying true to our Words! we give you the best price we
+                                can offer!
+                            </p>
+                        </header>
+
+                        <a href="pricing.php"
+                            class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-gray-900 border border-gray-900 rounded hover:shadow focus:outline-none focus:ring">
+                            View All Pricing Plans
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 lg:py-8">
+                    <ul class="grid grid-cols-2 gap-4">
+                        <li>
+                            <a href="#" class="block group">
+                                <img src="https://unsplash.com/photos/GopRYASfsOc/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjkxNDY4OTMzfA&force=true&w=640"
+                                    alt="" class="object-cover w-full rounded aspect-square" />
+
+                                <div class="mt-3">
+                                    <h3
+                                        class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
+                                        Level 1 Plan
+                                    </h3>
+
+                                    <p class="mt-1 text-sm text-gray-700">$10 / month</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="block group">
+                                <img src="https://unsplash.com/photos/GopRYASfsOc/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjkxNDY4OTMzfA&force=true&w=640"
+                                    alt="" class="object-cover w-full rounded aspect-square" />
+
+                                <div class="mt-3">
+                                    <h3
+                                        class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
+                                        Level 2 Plan
+                                    </h3>
+
+                                    <p class="mt-1 text-sm text-gray-700">$25 / month</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <?php include 'components/footer.php'; ?>
     <!-- Scripts -->
