@@ -19,8 +19,10 @@
 -   [ ] Create terms page
 -   [ ] Create privacy page
 
--   [ ] Create login page
--   [ ] Create register page
+-   [x] Create login page UI
+-   [ ] Create login functions
+-   [x] Create register page UI
+-   [ ] Create register functions
 -   [ ] Create partial-register page
 -   [ ] Create password-reset page
 
