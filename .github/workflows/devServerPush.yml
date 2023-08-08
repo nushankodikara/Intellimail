@@ -1,4 +1,4 @@
-name: Server Push
+name: Development Server Push
 
 on:
     push:
