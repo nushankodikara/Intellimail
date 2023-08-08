@@ -30,3 +30,7 @@
 -   [ ] Create mytickets page
 -   [ ] Create newticket page
 -   [ ] Create viewticket page
+
+-   [ ] Database connection
+-   [ ] Database tables
+-   [ ] Database queries
