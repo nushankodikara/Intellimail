@@ -20,11 +20,11 @@
 -   [ ] Create privacy page
 
 -   [x] Create login page UI
--   [ ] Create login functions
+-   [x] Create login functions
 -   [x] Create register page UI
--   [ ] Create register functions
--   [ ] Create partial-register page
--   [ ] Create password-reset page
+-   [x] Create register functions
+-   [x] Create partial-register page
+-   [x] Create password-reset page
 
 -   [ ] Create admin page
 
@@ -33,6 +33,8 @@
 -   [ ] Create newticket page
 -   [ ] Create viewticket page
 
--   [ ] Database connection
--   [ ] Database tables
+-   [x] Database connection
+-   [x] Database tables
 -   [ ] Database queries
+
+-   [ ] Server Function Library

@@ -3,7 +3,8 @@
 
 <head>
     <title>Intelli Mail</title>
-    <?php include 'components/head.php'; ?>
+    <?php include 'components/head.php';
+    include 'components/noauthusers.php'; ?>
 </head>
 
 <body>
@@ -27,14 +28,41 @@
                     <p class="mt-4 leading-relaxed text-gray-500">
                         Create your free account and join the adventure </p>
 
-                    <form action="#" class="mt-8 grid grid-cols-6 gap-6">
+                    <?php
+                    // Check if get request is set for error
+                    if (isset($_GET['error'])) {
+                        $error = $_GET['error'];
+                        if ($error == 'emptyfields') {
+                            echo '<p class="mt-4 leading-relaxed text-red-500">Please fill in all fields</p>';
+                        } else if ($error == 'invalidemail') {
+                            echo '<p class="mt-4 leading-relaxed text-red-500">Please enter a valid email</p>';
+                        } else if ($error == 'passwordcheck') {
+                            echo '<p class="mt-4 leading-relaxed text-red-500">Passwords do not match</p>';
+                        } else if ($error == 'emailtaken') {
+                            echo '<p class="mt-4 leading-relaxed text-red-500">Email is already taken</p>';
+                        } else if ($error == 'sqlerror') {
+                            echo '<p class="mt-4 leading-relaxed text-red-500">SQL Error</p>';
+                        }
+                    }
+                    ?>
+
+                    <form method="post" action="functions/register.php" class="mt-8 grid grid-cols-6 gap-6">
                         <div class="col-span-6 sm:col-span-3">
                             <label for="FirstName" class="block text-sm font-medium text-gray-700">
                                 First Name
                             </label>
 
-                            <input type="text" id="FirstName" name="first_name"
-                                class="mt-1 w-full p-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+                            <?php
+                            // Check if get request is set
+                            if (isset($_GET['firstname'])) {
+                                $firstname = $_GET['firstname'];
+                                echo '<input type="text" id="FirstName" name="firstname" value="' . $firstname . '"
+                                    class="mt-1 w-full p-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />';
+                            } else {
+                                echo '<input type="text" id="FirstName" name="firstname"
+                                    class="mt-1 w-full p-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />';
+                            }
+                            ?>
                         </div>
 
                         <div class="col-span-6 sm:col-span-3">
@@ -42,8 +70,17 @@
                                 Last Name
                             </label>
 
-                            <input type="text" id="LastName" name="last_name"
-                                class="mt-1 w-full p-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+                            <?php
+                            // Check if get request is set
+                            if (isset($_GET['lastname'])) {
+                                $lastname = $_GET['lastname'];
+                                echo '<input type="text" id="LastName" name="lastname" value="' . $lastname . '"
+                                    class="mt-1 w-full p-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />';
+                            } else {
+                                echo '<input type="text" id="LastName" name="lastname"
+                                    class="mt-1 w-full p-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />';
+                            }
+                            ?>
                         </div>
 
                         <div class="col-span-6">
@@ -51,8 +88,17 @@
                                 Email
                             </label>
 
-                            <input type="email" id="Email" name="email"
-                                class="mt-1 w-full p-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+                            <?php
+                            // Check if get request is set
+                            if (isset($_GET['email'])) {
+                                $email = $_GET['email'];
+                                echo '<input type="email" id="Email" name="email" value="' . $email . '"
+                                    class="mt-1 w-full p-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />';
+                            } else {
+                                echo '<input type="email" id="Email" name="email"
+                                    class="mt-1 w-full p-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />';
+                            }
+                            ?>
                         </div>
 
                         <div class="col-span-6 sm:col-span-3">
@@ -69,18 +115,17 @@
                                 Password Confirmation
                             </label>
 
-                            <input type="password" id="PasswordConfirmation" name="password_confirmation"
+                            <input type="password" id="PasswordConfirmation" name="cpassword"
                                 class="mt-1 w-full p-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
                         </div>
 
                         <div class="col-span-6">
                             <label for="MarketingAccept" class="flex gap-4">
                                 <input type="checkbox" id="MarketingAccept" name="marketing_accept"
-                                    class="h-5 w-5 rounded-md border-gray-200 bg-white shadow-sm" />
+                                    class="h-5 w-5 rounded-md border-gray-200 bg-white shadow-sm" required />
 
                                 <span class="text-sm text-gray-700">
-                                    I want to receive emails about events, product updates and
-                                    company announcements.
+                                    I agree to terms and conditions.
                                 </span>
                             </label>
                         </div>

@@ -3,7 +3,8 @@
 
 <head>
     <title>Intelli Mail</title>
-    <?php include 'components/head.php'; ?>
+    <?php include 'components/head.php';
+    include 'components/noauthusers.php'; ?>
 </head>
 
 <body>
@@ -27,14 +28,43 @@
                     <p class="mt-4 leading-relaxed text-gray-500">
                         Let's login to your account </p>
 
-                    <form action="#" class="mt-8 grid grid-cols-6 gap-6">
+                    <?php
+                    if (isset($_GET['error'])) {
+                        if ($_GET['error'] == "emptyfields") {
+                            echo '<p class="text-red-500">Fill in all fields!</p>';
+                        } else if ($_GET['error'] == "passwordcheck") {
+                            echo '<p class="text-red-500">Wrong password!</p>';
+                        } else if ($_GET['error'] == "nouser") {
+                            echo '<p class="text-red-500">User not found!</p>';
+                        } else if ($_GET['error'] == "invalidemail") {
+                            echo '<p class="text-red-500">Invalid email!</p>';
+                        }
+                    }
+
+                    if (isset($_GET['success'])) {
+                        if ($_GET['success'] == "registered") {
+                            echo '<p class="text-green-500">Registered successfully!</p>';
+                        }
+                    }
+                    ?>
+
+                    <form method="post" action="functions/login.php" class="mt-8 grid grid-cols-6 gap-6">
                         <div class="col-span-6">
                             <label for="Email" class="block text-sm font-medium text-gray-700">
                                 Email
                             </label>
 
-                            <input type="email" id="Email" name="email"
-                                class="mt-1 w-full p-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+                            <?php
+                            if (isset($_GET['email'])) {
+                                $email = $_GET['email'];
+                                echo '<input type="email" id="Email" name="email" value="' . $email . '"
+                                class="mt-1 w-full p-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />';
+                            } else {
+                                echo '<input type="email" id="Email" name="email"
+                                class="mt-1 w-full p-2 rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />';
+                            }
+
+                            ?>
                         </div>
 
                         <div class="col-span-6">

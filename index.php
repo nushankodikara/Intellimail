@@ -30,7 +30,7 @@
                 automate your boring old email inboxes to a new level with a twist of Artificial Intelligence. Want to
                 konw how you can do it? Join
                 Us.</p>
-            <form class="w-full max-w-md mx-auto">
+            <form class="w-full max-w-md mx-auto" method="get" action="register.php">
                 <label for="default-email" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Email
                     sign-up</label>
                 <div class="relative">
@@ -43,7 +43,7 @@
                                 d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
                         </svg>
                     </div>
-                    <input type="email" id="default-email"
+                    <input type="email" id="default-email" name="email"
                         class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Enter your email here..." required>
                     <button type="submit"
