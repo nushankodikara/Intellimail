@@ -37,3 +37,5 @@
 
 -   [x] Database connection
 -   [x] Database tables
+
+[UI Designing, Frontend, Backend + Dtabase, Testing + Deployment]
