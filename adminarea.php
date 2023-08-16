@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include 'components/clientarea-sidebar.php'; ?>
+    <?php include 'components/admin-sidebar.php'; ?>
 
     <div class="p-4 sm:ml-64">
 
@@ -48,14 +48,7 @@
                         <?php
                         include 'components/server.php';
 
-                        $email = $_COOKIE['email'];
-
-                        $sql = "SELECT * FROM users WHERE email='$email'";
-                        $result = mysqli_query($conn, $sql);
-                        $row = mysqli_fetch_assoc($result);
-                        $userid = $row['id'];
-
-                        $sql = "SELECT * FROM tickets WHERE userid='$userid'";
+                        $sql = "SELECT * FROM tickets";
                         $result = mysqli_query($conn, $sql);
 
                         // Change background color accordingly in priority
@@ -71,11 +64,12 @@
 
                             echo '<tr>
                             <td class="px-6 py-4 whitespace-nowrap">' . $row['id'] . '</td>
-                            <td class="px-6 py-4 text-blue-500 whitespace-nowrap"><a href="viewticket.php?id=' . $row['id'] . '">' . $row['subject'] . '</a></td>
+                            <td class="px-6 py-4 text-blue-500 whitespace-nowrap"><a href="viewticketAdmin.php?id=' . $row['id'] . '">' . $row['subject'] . '</a></td>
                             <td class="px-6 py-4 whitespace-nowrap">' . $row['status'] . '</td>
                             <td class="px-6 py-4 text-white ' . $priority . ' p-1 whitespace-nowrap">' . $row['priority'] . '</td>
                             <td class="px-6 py-4 whitespace-nowrap">
-                                <a href="functions/closeticket.php?id=' . $row['id'] . '" class="text-red-500 hover:underline">Close</a>
+                                <a href="functions/closeticketAdmin.php?id=' . $row['id'] . '" class="text-orange-500 hover:underline">Close</a>
+                                <a href="functions/deleteticketAdmin.php?id=' . $row['id'] . '" class="text-red-500 hover:underline">Delete</a>
                             </td>
                         </tr>';
                         }

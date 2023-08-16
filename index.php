@@ -117,7 +117,7 @@
 
             <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <a class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
-                    href="features.php">
+                    href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -135,7 +135,7 @@
                 </a>
 
                 <a class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
-                    href="features.php">
+                    href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -154,7 +154,7 @@
                 </a>
 
                 <a class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
-                    href="features.php">
+                    href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -172,7 +172,7 @@
                 </a>
 
                 <a class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
-                    href="features.php">
+                    href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -190,7 +190,7 @@
                 </a>
 
                 <a class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
-                    href="features.php">
+                    href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -209,7 +209,7 @@
                 </a>
 
                 <a class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10"
-                    href="features.php">
+                    href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -228,12 +228,6 @@
                 </a>
             </div>
 
-            <div class="mt-12 text-center">
-                <a href="features.php"
-                    class="inline-block rounded bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring focus:ring-yellow-400">
-                    View All Features
-                </a>
-            </div>
         </div>
     </section>
 
@@ -270,10 +264,10 @@
                                 <div class="mt-3">
                                     <h3
                                         class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
-                                        Level 1 Plan
+                                        Starter Plan
                                     </h3>
 
-                                    <p class="mt-1 text-sm text-gray-700">$10 / month</p>
+                                    <p class="mt-1 text-sm text-gray-700">$29 / month</p>
                                 </div>
                             </a>
                         </li>
@@ -286,10 +280,10 @@
                                 <div class="mt-3">
                                     <h3
                                         class="font-medium text-gray-900 group-hover:underline group-hover:underline-offset-4">
-                                        Level 2 Plan
+                                        Company Plan
                                     </h3>
 
-                                    <p class="mt-1 text-sm text-gray-700">$25 / month</p>
+                                    <p class="mt-1 text-sm text-gray-700">$99 / month</p>
                                 </div>
                             </a>
                         </li>

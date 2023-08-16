@@ -133,10 +133,7 @@
                         <div class="col-span-6">
                             <p class="text-sm text-gray-500">
                                 By creating an account, you agree to our
-                                <a href="terms-and-conditions.php" class="text-gray-700 underline">
-                                    terms and conditions
-                                </a>
-                                and
+
                                 <a href="privacy-policy.php" class="text-gray-700 underline">privacy policy</a>.
                             </p>
                         </div>

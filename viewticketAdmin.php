@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <?php include 'components/clientarea-sidebar.php'; ?>
+    <?php include 'components/admin-sidebar.php'; ?>
 
     <div class="p-4 sm:ml-64">
 
@@ -19,17 +19,7 @@
 
                 $ticketid = $_GET['id'];
 
-                $email = $_COOKIE['email'];
-
-                $sql = "SELECT * FROM users WHERE email='$email'";
-
-                $result = mysqli_query($conn, $sql);
-
-                $row = mysqli_fetch_assoc($result);
-
-                $userid = $row['id'];
-
-                $sql = "SELECT * FROM tickets WHERE id='$ticketid' AND userid='$userid'";
+                $sql = "SELECT * FROM tickets WHERE id='$ticketid'";
 
                 $result = mysqli_query($conn, $sql);
 
@@ -47,7 +37,7 @@
                 <p class="text-gray-700 mb-4">
                     <?php echo $row['description']; ?>
                 </p>
-                <form action="functions/replyticket.php" method="post">
+                <form action="functions/replyticketAdmin.php" method="post">
                     <?php echo '<input type="hidden" name="ticketid" value="' . $ticketid . '">'; ?>
                     <div class="mb-4">
                         <label class="block text-gray-700 font-bold mb-2" for="reply">

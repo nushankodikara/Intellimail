@@ -1,6 +1,6 @@
 <?php
 
-include 'components/server.php';
+include 'server.php';
 
 // Auth Check
 if (!isset($_COOKIE['email'])) {

@@ -11,13 +11,12 @@
 -   [x] Create a basic footer
 
 -   [x] Create home page
--   [ ] Create about us page
--   [ ] Create contact page
--   [ ] Create downloads page
--   [ ] Create features page
--   [ ] Create pricing page
--   [ ] Create terms page
--   [ ] Create privacy page
+-   [ ] Create about us page ( Team Profiles )
+-   [x] Create contact page
+-   [x] Create downloads page
+-   [x] Create pricing page
+-   [x] Create terms page
+-   [x] Create privacy page
 
 -   [x] Create login page UI
 -   [x] Create login functions
@@ -26,15 +25,15 @@
 -   [x] Create partial-register page
 -   [x] Create password-reset page
 
--   [ ] Create admin page
+-   [x] Create admin page
 
--   [ ] Create clientarea page
--   [ ] Create mytickets page
--   [ ] Create newticket page
--   [ ] Create viewticket page
+-   [x] Create clientarea page
+-   [x] Create mytickets page
+-   [x] Create newticket page
+-   [x] Create viewticket page
+
+-   [x] Create Products Page
+-   [x] Implement Paypal Sandbox
 
 -   [x] Database connection
 -   [x] Database tables
--   [ ] Database queries
-
--   [ ] Server Function Library

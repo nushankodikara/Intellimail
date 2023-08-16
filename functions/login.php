@@ -45,6 +45,12 @@ setcookie('token', $token, time() + (86400 * 30), "/");
 mysqli_close($conn);
 
 sleep(2);
-header('Location: ../clientarea.php');
+// check role and redirect to clientarea or adminarea
+if ($row['role'] == 'admin') {
+    header('Location: ../adminarea.php');
+} else {
+    header('Location: ../clientarea.php');
+}
+
 
 ?>
