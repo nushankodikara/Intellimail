@@ -1,0 +1,16 @@
+{
+    "name": "intellimail",
+    "description": "-   HTML + PHP + TailwindCSS",
+    "version": "1.0.0",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "php-server": "^1.0.0"
+    },
+    "devDependencies": {},
+    "author": "",
+    "license": "ISC"
+}
