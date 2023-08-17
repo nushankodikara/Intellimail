@@ -10,7 +10,7 @@ $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 
 if ($row['role'] !== 'user') {
-    header('Location: ../login.php');
+    header('Location: ../functions/logout.php');
 }
 
 ?>
