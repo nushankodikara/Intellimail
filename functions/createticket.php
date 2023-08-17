@@ -19,9 +19,6 @@ $userid = $row['id'];
 // Create ticket
 $sql = "INSERT INTO tickets (subject, department, priority, description, userid) VALUES ('$subject', '$department', '$priority', '$description', '$userid')";
 
-// debug
-echo $sql;
-
 if (mysqli_query($conn, $sql)) {
     header('Location: ../mytickets.php');
 } else {
