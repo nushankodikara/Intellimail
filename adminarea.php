@@ -12,10 +12,7 @@
     <div class="p-4 sm:ml-64">
 
         <div class="container mx-auto p-4">
-            <h1 class="text-2xl font-semibold mb-8">My Tickets <a href="newticket.php"
-                    class="bg-blue-500 text-sm text-white px-4 py-2 mx-4 rounded-md hover:bg-blue-600">
-                    Create New Ticket
-                </a></h1>
+            <h1 class="text-2xl font-semibold mb-8">My Tickets</h1>
 
             <div class="mb-4">
 
